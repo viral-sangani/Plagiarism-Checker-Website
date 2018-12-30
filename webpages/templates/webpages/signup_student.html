@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up | Student Gateway</title>
+    {% load staticfiles%}
+    <link rel="stylesheet" type="text/css" href="{% static 'webpages/signup_style/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'webpages/signup_style/css/fontawesome-all.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'webpages/signup_style/css/iofrm-style.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'webpages/signup_style/css/iofrm-theme15.css' %}">
+</head>
+<body>
+    <div class="form-body" class="container-fluid">
+        <div class="website-logo">
+            <a href="index.html">
+                <div class="logo">
+                    <img class="logo-size" src="{% static 'webpages/signup_style/images/logo-light.svg" alt="">
+                </div>
+            </a>
+        </div>
+        <div class="row">
+            <div class="img-holder">
+                <div class="bg"></div>
+                <div class="info-holder">
+                    <h3>Student Gateway</h3>
+                    <p>A Place Where You can Submit Your Assignment To teachers on time.</p>
+                </div>
+            </div>
+            <div class="form-holder">
+                <div class="form-content form-sm">
+                    <div class="form-items">
+                        <h3 class="form-title">Sign Up | Student</h3>
+                        <form method="POST">
+                            <!-- <div class="form-group">
+                                <label>Personal Information</label>
+                                <input type="text" class="form-control" name="fullname" placeholder="Full Name" required>
+                                <input type="text" class="form-control" name="username" placeholder="User Name" required>
+                                <input type="email" class="form-control" name="email" placeholder="E-mail Address" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Class</label>
+                                <div class="custom-options" >
+                                    <input type="radio" id="rad1" name="rad"><label for="rad1">CSE 1</label>
+                                    <input type="radio" id="rad2" name="rad"><label for="rad2">CSE 2</label>
+                                    <input type="radio" id="rad3" name="rad"><label for="rad3">CSE 3</label>
+                                    <input type="radio" id="rad3" name="rad"><label for="rad3">CSE 3</label>
+                                </div>
+                                <div class="form-row" style="padding-top: 10px;">
+                                    <div class="col">
+                                        <input type="text" name="rollno" class="form-control" placeholder="Roll Number">
+                                    </div>
+                                    <div class="col">
+                                        <input type="password" name="password" class="form-control" placeholder="Password">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-button text-right">
+                                    <button type="button" class="btn btn-light">Cancel</button><button id="submit" type="submit" class="ibtn">Save</button>
+                            </div> -->
+                            {% csrf_token %}
+                                    {{ form.as_p }}
+                                    <button id="submit" type="submit" class="ibtn">Save</button>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<script type="text/javascript" src="{% static 'webpages/signup_style/js/jquery.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'webpages/signup_style/js/popper.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'webpages/signup_style/js/bootstrap.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'webpages/signup_style/js/main.js' %}"></script>
+</body>
+
+</html>

@@ -1,0 +1,136 @@
+
+<!DOCTYPE html>
+<html class="no-js">
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Profile</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="shortcut icon" href="favicon.ico">
+	<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
+	{% load staticfiles%}
+	<link rel="stylesheet" href="{% static 'webpages/profile_style/css/animate.css' %}">
+	<link rel="stylesheet" href="{% static 'webpages/profile_style/css/icomoon.css' %}">
+	<link rel="stylesheet" href="{% static 'webpages/profile_style/css/bootstrap.css' %}">
+	<link rel="stylesheet" href="{% static 'webpages/profile_style/css/style.css' %}">
+
+	<link rel="stylesheet" href="{% static 'webpages/profile_style/css/magnific-popup.css' %}">
+
+
+	<script src="{% static 'webpages/profile_style/js/modernizr-2.6.2.min.js' %}"></script>
+	</head>
+	<body>
+
+	<div id="fh5co-header" style="background-image: url({% static 'webpages/profile_style/images/polygon.png' %})" data-stellar-background-ratio="0.5">
+		<div class="overlay"></div>
+		<div class="bio-photo text-center">
+			<a href="index.html"><img src="{% static 'webpages/profile_style/images/person_2.jpg' %}"></a>
+
+		</div>
+	</div>
+	<div class="row">
+		<div style="padding-top: 100px;text-align: center;" class="col-md-12">
+			<h2>{{s_fullname}}</h2>
+		</div>
+	</div>
+	<div id="fh5co-main">
+
+	<div class="fh5co-section" style="padding-top: 0px;padding-bottom: 0px;">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4 col-sm-4 col-xs-12 section-heading">
+						<h2>UserName</h2>
+				</div>
+				<div class="col-md-8 col-sm-8 col-xs-12">
+					<div class="row">
+						<div class="col-md-12">
+							<p>{{s_username}}</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="fh5co-section" style="padding-top: 0px;padding-bottom: 0px;">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4 col-sm-4 col-xs-12 section-heading">
+						<h2>Classes</h2>
+				</div>
+				<div class="col-md-8 col-sm-8 col-xs-12">
+					<div class="row">
+						<div class="col-md-12">
+							<p>{{s_class}}</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="fh5co-section" style="padding-top: 0px;padding-bottom: 0px;">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4 col-sm-4 col-xs-12 section-heading">
+						<h2>Roll Number</h2>
+				</div>
+				<div class="col-md-8 col-sm-8 col-xs-12">
+					<div class="row">
+						<div class="col-md-12">
+							<p>{{s_rollno}}</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="fh5co-section" style="padding-top: 0px;padding-bottom: 0px;">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4 col-sm-4 col-xs-12 section-heading">
+						<h2>Email Address</h2>
+				</div>
+				<div class="col-md-8 col-sm-8 col-xs-12">
+					<div class="row">
+						<div class="col-md-12">
+							<p>{{s_email}}</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="fh5co-section" style="padding-top: 0px;padding-bottom: 0px;">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4 col-sm-4 col-xs-12 section-heading">
+						<h2>Bio</h2>
+				</div>
+				<div class="col-md-8 col-sm-8 col-xs-12">
+					<div class="row">
+						<div class="col-md-12">
+							<p>{{s_bio}}</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<script src="{% static 'webpages/profile_style/js/jquery.min.js' %}"></script>
+	<script src="{% static 'webpages/profile_style/js/jquery.easing.1.3.js' %}"></script>
+	<script src="{% static 'webpages/profile_style/js/bootstrap.min.js' %}"></script>
+
+	<script src="{% static 'webpages/profile_style/js/jquery.stellar.min.js' %}"></script>
+
+	<script src="{% static 'webpages/profile_style/js/jquery.waypoints.min.js' %}"></script>
+
+	<script src="{% static 'webpages/profile_style/js/jquery.magnific-popup.min.js' %}"></script>
+	<script src="{% static 'webpages/profile_style/js/magnific-popup-options.js' %}"></script>
+
+	<script src="{% static 'webpages/profile_style/js/main.js' %}"></script>
+
+	</body>
+</html>

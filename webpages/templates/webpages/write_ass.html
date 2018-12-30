@@ -1,0 +1,51 @@
+<!DOCTYPE HTML>
+<html>
+   <head>
+      <title>Assignment</title>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+         {% load staticfiles%}
+      <link rel="stylesheet" href="{% static 'webpages/write_style/assets/css/main.css' %}" />
+   </head>
+   <body>
+   {% for o in obj %}
+      <section id="banner">
+         <div class="inner split">
+            <section>
+               <p style="margin-bottom: 0px;">Assignment Title : </p>
+               <h2>{{o.ass_title}}</h2>
+                  <p style="margin-bottom: 0px;margin-top: 22px;">Given Date: <span>{{o.ass_given_date}}</span></p>
+                  <p>Last Date: <span>{{o.ass_sub_date}}</span></p>
+            </section>
+
+            <section>
+               <p style="margin-bottom: 0px;">Assignment Question : </p>
+               <p style="color: white; font-size:22px;">{{o.ass_body}}</p>
+               <p style="margin-bottom: 0px;">Extra Note By Teacher : {{o.ass_extra}}</p>
+            </ul>
+            </section>
+         </div>
+      </section>
+      <form method="post" style="padding: 50px 10px; padding-left: 80px;padding-right: 80px;">
+         {% csrf_token %}
+         {{ form.content }}
+         <br><br>
+         <div class="row button-section">
+               <div class="col-twelve">
+                  <input class="button button-primary" type="submit" name="submit" value="Submit" />
+                  <input class="button button-primary" type="submit" name="save" value="save" />
+               </div>
+         </div>
+         <input type="hidden" value="{{o.ass_title}}" name = "post_title" />
+         </form>
+      {% endfor %}
+
+         <script src="{% static 'webpages/write_style/assets/js/jquery.min.js' %}"></script>
+         <script src="{% static 'webpages/write_style/assets/js/skel.min.js' %}"></script>
+         <script src="{% static 'webpages/write_style/assets/js/util.js' %}"></script>
+         <script src="{% static 'webpages/write_style/assets/js/main.js' %}"></script>
+         <script src="{% static 'webpages/tinymce/js/tinymce/tinymce.min.js' %}"></script>
+         <script src="{% static 'webpages/tinymce/js/tinymce/custom.js' %}"></script>
+
+   </body>
+</html>
